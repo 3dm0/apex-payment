@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApeX Studio | صفحة الدفع</title>
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 170, 0.2);
+    }
+    h1 {
+      text-align: center;
+      color: #00ffaa;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: #2a2a2a;
+      color: white;
+    }
+    .payments {
+      margin-top: 30px;
+    }
+    .payments a {
+      display: block;
+      text-align: center;
+      background-color: #00ffaa;
+      color: black;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .payments a:hover {
+      background-color: #00dd99;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>ApeX Studio</h1>
+    <p style="text-align: center;">يرجى تعبئة بياناتك واختيار وسيلة الدفع المناسبة</p>
+
+    <form>
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="name" placeholder="اكتب اسمك" required>
+
+      <label for="phone">رقم التواصل</label>
+      <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+    </form>
+
+    <div class="payments">
+      <a href="#">الدفع عبر stc pay</a>
+      <a href="#">الدفع عبر Apple Pay</a>
+      <a href="#">تحويل بنكي</a>
+      <a href="#">رابط دفع مباشر</a>
+    </div>
+  </div>
+</body>
+</html>
