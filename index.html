@@ -7,11 +7,38 @@
   <style>
     body {
       font-family: 'Tajawal', sans-serif;
-      background-color: #0f0f0f;
+      background-color: #000000;
       color: white;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
     }
+
+    /* تأثير حركة اللوجو */
+    .logo {
+      animation: slideIn 2s ease-in-out;
+      margin-bottom: 30px;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(30px);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
     .container {
       max-width: 500px;
       margin: 50px auto;
@@ -59,6 +86,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- اللوجو المتحرك -->
+  <img class="logo" src="https://via.placeholder.com/150" alt="ApeX Studio Logo">
+
   <div class="container">
     <h1>ApeX Studio</h1>
     <p style="text-align: center;">يرجى تعبئة بياناتك واختيار وسيلة الدفع المناسبة</p>
